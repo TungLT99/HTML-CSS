@@ -1,0 +1,87 @@
+*
+{
+    background-color: #FFFFCC;
+}
+.container .header
+{
+    background-color:#F7C363 ;
+    display: flex;
+    justify-content: center;
+}
+.header h2
+{
+    background-color:#F7C363 ;
+    color: #CE3000;  
+}
+.container .link
+{
+    margin: 0 0 0 30px ; 
+    border-bottom: 4px solid #FF51EF;
+    font-weight: bold;
+    font-size: 110%;
+}
+.container .block .thumbnail
+{
+    display: flex;
+    flex-direction: column;
+}
+.container .block p
+{
+    color: #F7C363;
+    margin-left: 30px;
+}
+.container .block .content p
+{
+    color: #F7C363;
+    margin-left: -5px;
+}
+.container .block h4
+{
+    color: blue;
+    margin-left: 30px;
+}
+.container .block .content
+{
+    display: flex;
+    border-bottom: 1px solid gray;
+    margin-left: 25px;
+}
+.container .block .content #blur
+{
+    border-bottom: 0.5px solid gray;
+}
+
+.container .block .content .image
+{
+    width: 180px;
+    height: 130px;
+    margin: 20px 10px;
+}
+.container .block  .content .text
+{
+    color: green;
+}
+.block .content-bottom
+{
+    border-bottom: 4px solid #FF51EF;
+    margin: 0 0 0 30px;
+}
+.block .content-bottom span
+{
+    color: green;
+}
+.block .content-bottom h3
+{
+    color: orange;
+}
+.block .content-bottom #blue
+{
+    color: blue;
+}
+.container .footer
+{
+    text-align: center;
+    color: #0F8784;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 110%;
+}
