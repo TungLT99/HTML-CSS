@@ -1,0 +1,135 @@
+.container
+{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+    /* border: solid gray; */
+    background-color: #FFF6DB;
+}
+.container .personal
+{
+    display: flex;
+}
+.container .personal .image
+{
+    width: 25%;
+    margin: 2% 2% 2% 5%;
+    object-fit: cover;
+}
+.container .personal .image img
+{
+    width: 80%;
+
+}
+.container .personal .name
+{
+    width: 70%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container .personal .name h1
+{
+    color: #EF8762;
+    font-size: 350%;
+    font-weight: bold;
+    margin-bottom: 50px;
+    margin-left: 0px;
+}
+.container .personal .name h3
+{
+    color: #696B6F;
+    font-size: 125%;
+}
+.container p
+{
+    margin: 2% 5%;
+}
+.container .icon
+{
+    margin: auto;
+}
+.container .icon img
+{
+    width: 40px;
+    height: 20px;
+}
+.container .icon#icon-bottom
+{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.container .info
+{
+    display: flex;
+    justify-items: center;
+    margin-left: 5%;
+    margin-bottom: 2%;
+}
+.container .info .info-name
+{
+    width: 30%;
+    margin-right: 20px;
+}
+.container .mid
+{
+    display: flex;
+}
+.container .mid h2
+{
+    color: #EF8762;
+    /* margin: 0 5% 5% 5%; */
+}
+.container .mid .thumbnail 
+{
+    width: 45%;
+    border-right:3px dashed #EF8762;
+    margin-right: 2%;
+    margin-left: 5%;
+}
+.container .mid .thumbnail .skill
+{
+    display: flex;
+    /* margin-left:5% ; */
+}
+.container .mid .thumbnail .skill .text
+{
+    margin-right: 20px;
+    width: 40%;
+    margin-top: 10px;
+}
+.container .mid .thumbnail .skill .text p
+{
+    margin-bottom: 16px;
+}
+.container .mid .thumbnail .skill .progress
+{
+    width: 60%;
+}
+.container .mid .thumbnail .skill .progress .progress-icon
+{
+   display: flex;
+   margin-top: 14px;
+}
+.container .mid .thumbnail .skill .progress .progress-icon img
+{
+    width: 20px;
+    height: 20px;
+}
+.container .mid .thumbnail2
+{
+    margin-left: 5%;
+}
+.container .mid .thumbnail2 h2
+{
+    margin-left: -5%;
+}
+.container .footer
+{
+    display: flex;
+    width: 70%;
+    margin: auto;
+}
+.container .footer .info-footer
+{
+    width: 25%;
+}
