@@ -1,0 +1,98 @@
+*
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+body
+{
+    background-color: #E6F4FF;
+}
+.container
+{
+    
+    display: flex;
+    width: 60%;
+    margin: auto;
+    background-color: white;
+    /* border: solid gray; */
+    margin-top: 5%;
+}
+.container .image
+{
+    width: 40%;
+}
+.container .text
+{
+    width: 66%;
+    margin-left: 4%;
+}
+.container .text-top
+{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    /* border-bottom: solid  #FF115C; */
+}
+
+.container .text .hr
+{
+    background-color: #FF115C;
+    width: 25%;
+    height: 1px;
+    /* display: none; */
+}
+.container .text-bottom p#hover-hr:hover .hr 
+{
+    display: block;
+}
+.container .text-top .header
+{
+    display: flex;
+    flex-direction: row;
+}
+.container .text-top .header .header-left
+{
+    width: 30%;
+    margin: auto;
+    color: #FF115C;
+}
+.container .text-top .header .header-right
+{
+    width: 75%;
+    display: flex;
+    margin-right: 0;
+    margin-left: 20%;
+}
+.container .text-top .header .header-right .header-right-title
+{
+    margin: 2%;
+}
+.container .text-bottom
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.container .text-bottom p
+{
+    font-size: 90%;
+    color: gray;
+    letter-spacing: -1px;
+}
+.container .text-bottom h4
+{
+    font-weight:400 ;
+}
+.container .text-bottom button
+{
+    width: 25%;
+    margin-left: 70%;
+    background-color: #FF115C;
+    padding: 10px 0px;
+    color: white;
+    transition: all 1.5s;
+}
+.container .text-bottom button:hover
+{
+    background-color: aqua;
+    cursor: pointer;
+}

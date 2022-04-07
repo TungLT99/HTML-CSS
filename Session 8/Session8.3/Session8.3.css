@@ -1,0 +1,107 @@
+body
+{
+    background-color: gray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container
+{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    background-color: white;
+    margin: auto;
+}
+.container .title1
+{
+    display: flex;
+    margin: 2%;
+    justify-content: space-between;
+}
+.container .title-left
+{
+    width: 45%;
+}
+.container .title-right
+{
+    width: 55%;
+    margin-left: 250px;
+}
+.container .title1 .title-right
+{
+    margin-right: 0;
+}
+.container h2
+{
+    color: gray;
+    font-size: 175%;
+    font-weight: 500;
+    margin: 0;
+}
+.container .mid1
+{
+    display: flex;
+}
+.container .images
+{
+    margin: 0 5%;
+}
+.container .mid1 .mid1-right    
+{
+    margin: 5% 3%;
+    width: 60%;
+}
+.container .mid1 .mid1-right img
+{
+    width: 95%;
+}
+.container .mid1 .mid1-left
+{
+    width: 40%;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+.container .mid1 .mid1-left h3
+{
+    margin-left: 15%;
+    color: gray;
+}
+.container .mid1 .mid1-left p
+{
+    font-size: 80%;
+}
+.container p
+{
+    margin: 0 15%;
+    margin-bottom: 5%;
+    color: gray;
+}
+.container .title2
+{
+    display: flex;
+    margin: 2%;
+}
+.container .mid2
+{
+    display: flex;
+    margin: 0 5%;
+}
+.container .mid2 h4
+{
+    margin-bottom: 0;
+}
+.container .mid2 .mid2-left
+{
+    width: 65%;
+    text-align: center;
+}
+.container .mid2 .mid2-left img
+{
+    width: 100%;
+}
+.container .mid2 .mid2-right
+{
+    width: 35%;
+    margin: auto;
+    margin-top: 0;
+    text-align: center;
+}
