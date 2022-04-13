@@ -1,0 +1,155 @@
+/* All */
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+html
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body
+{
+    background:linear-gradient(-200deg,violet,aqua);
+    background-repeat: no-repeat;
+    height:100vh;
+}
+
+/* Common class */
+.col
+{
+    display: flex;
+    flex-direction: column;
+}
+.row
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.two-col
+{
+    width: 50%;
+}
+
+/* Css Main */
+.container
+{
+    display: flex;
+    width: 65%;
+    margin: auto;
+    background-color: white;
+    margin-top: 50px;
+    box-shadow: 0 0 15px gray;
+}
+
+.image
+{
+    width: 50%;
+    height: 400px;
+}
+.image img
+{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+.content
+{
+    width: 50%;
+    margin-left: 20px;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+.content .content-name
+{
+    margin-bottom: 20px;
+}
+.content input#name-input
+{
+    width: 225px;
+}
+.name
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+label.title
+{
+    font-weight: bold;
+    font-size: 10px;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    margin-left:3px;
+}
+input,select
+{
+    height: 24px;
+    border: 2px solid whitesmoke;
+    margin-bottom: 10px;
+}
+.content .gender
+{
+    display: flex;
+    font-size: 12px;
+}
+.content .gender p
+{
+    font-size: 12px;
+    margin-top: 5px;
+}
+.content .gender >input
+{
+    margin-left: 60px;
+    margin-right: 5px;
+    height: 16px;
+    font-size: 90%;
+    margin-top: 5px;
+}
+.state
+{
+    width: 100%;
+}
+.col-left select
+{
+    width: 200px;
+    margin-right:80px;
+}
+.col-right select
+{
+    width: 200px;
+}
+.button
+{
+    display: flex;
+    width: 100%;
+    margin-left: 250px;
+}
+.button .btn
+{
+    width: 100px;
+    height: 35px;
+    margin-right: 20px;
+    margin-top: 10px;
+    color: whitesmoke;
+    box-shadow: 0 0 5px gray;
+    border: none;
+    opacity: 0.8;
+}
+.button .btn:hover
+{
+    cursor: pointer;
+    opacity: 1;
+}
+.button .btn#reset
+{
+    background-color: gray;
+}
+.button .btn#ok
+{
+    background-color: #FF6801;
+}

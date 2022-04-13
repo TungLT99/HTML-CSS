@@ -1,7 +1,9 @@
 body
 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #AACB88;
+    background: linear-gradient(190deg,#BBD59F,#009688);
+    background-repeat: no-repeat;
+    height: 640px;
 }
 .container
 {
@@ -70,6 +72,8 @@ input
     margin-bottom: 10px;
     border: none;
     border-bottom: 1px solid gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* height: 24px; */
 }
 input#messenger
 {
@@ -87,10 +91,16 @@ input#messenger
 .content .input .btn
 {
     padding: 10px 0;
-    background:linear-gradient(gray,black);
+    background:linear-gradient(to right,gray,black);
     color: white;
     border-radius: 24px;
     width: 90%;
     margin: auto;
+    box-shadow: 0 5px 10px gray;
+}
+.content .input .btn:hover
+{
+    cursor: pointer;
+    background: linear-gradient(to right,aqua,green);
 }
 

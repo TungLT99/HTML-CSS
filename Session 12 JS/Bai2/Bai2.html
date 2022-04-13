@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: bisque;
+      }
+      .container {
+        width: 25%;
+        min-height: 200px;
+        margin: auto;
+        background-color: white;
+        box-shadow: 6px 6px 6px 1px #1f568b;
+        border: 1px solid #1f568b;
+        border-radius: 16px;
+        color: #1f568b;
+        display: flex;
+        flex-direction: column;
+        margin-top: 150px;
+      }
+      .title h3 {
+        margin: 25px 0;
+        text-align: center;
+      }
+      .row {
+        width: 80%;
+        margin: 0 20%;
+        margin-bottom: 15px;
+        display: flex;
+      }
+      .row label {
+        width: 100px;
+      }
+      .row input {
+        outline-width: 0;
+        /* border: none;
+          border-bottom: 1px solid gray; */
+      }
+      .button {
+        display: flex;
+        margin-left: 170px;
+      }
+      .button input {
+        background-color: #1f568b;
+        color: white;
+        margin-right: 15px;
+        margin-bottom: 10px;
+        width: 70px;
+        height: 30px;
+        border-radius: 10px;
+        opacity: 80%;
+      }
+      .button input:hover {
+        opacity: 1;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="https://www.google.com" method="post">
+      <div class="container">
+        <div class="title">
+          <h3>Register to system</h3>
+        </div>
+        <div class="row">
+          <label for="">User Name:</label>
+          <input type="text" id="username"/>
+        </div>
+        <div class="row">
+          <label for="">Password:</label>
+          <input type="password" id="password" />
+        </div>
+        <div class="row">
+          <label for="">RePassword:</label>
+          <input type="password" id="rePassword" />
+        </div>
+        <div class="button">
+          <input type="submit" value="Register" id="register" return false />
+          <input type="submit" value="Reset" id="reset"/>
+        </div>
+      </div>
+    </form>
+
+    <script>
+      document.getElementById("register").onclick = function () {checkregister();};
+    //   document.getElementById("reset").onclick = function() {checkreset();}
+  
+    //   function checkreset()
+    //   {
+    //     document.
+    //   }
+      function checkregister() 
+      {
+        var name = document.getElementById("username").value;
+        var pass = document.getElementById("password").value;
+        var rePass = document.getElementById("rePassword").value;
+        if (name && pass && rePass) 
+        {
+          if (pass == rePass) 
+          {
+            alert("Bạn nhập ok");
+            return true;
+          } 
+          else 
+          {
+            alert("Vui lòng nhập mật khẩu giống nhau");
+            return false;
+          }
+        } 
+        else 
+        {
+          alert("Vui lòng nhập đủ 3 ô !!");
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>
