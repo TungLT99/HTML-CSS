@@ -3,7 +3,30 @@
     padding: 0;
     margin: 0;
 }
+/* Construction */
 
+/* Container */
+/* Header */
+    /* Logo Header */
+    /* Header-right */
+/* Content */
+    /* Content- top */
+    /* Content -bottom */
+        /* Column 1 */
+            /* Column 1-thumbnail */
+            /* Column 1-thumbnail */
+        /* Column 2 */
+            /* Column 2-thumbnail */
+            /* Column 2-thumbnail */
+        /* Column 3 */
+            /* Column 3-thumbnail */
+            /* Column 3-thumbnail */
+/*Footer  */
+    /*Footer-logo  */
+    /*Copyright */
+    /*Detail  */
+
+/* Begin Css */
 
 /* General Class */
 .row
@@ -57,8 +80,8 @@
     color: #808185;
     text-transform: uppercase;
     font-weight: bold;
-    padding-right: 5px;
-    padding-left: 5px;
+    padding: 3px 5px;
+    line-height: 30px;
     border-right: solid gray;
     text-decoration: none;
 
@@ -81,6 +104,7 @@ ul.menu
     list-style: none;
     float: right;
 }
+
 ul.menu li:hover 
 {
     transform: scale(1.06);
@@ -89,7 +113,7 @@ ul.menu li:hover
 {
     width: 70%;
 }
-
+/* End CSS header */
 
 /* CSS content */
 
@@ -288,7 +312,7 @@ ul.menu li:hover
     background-color: #ADFF2F;
     padding: 2px 5px;
 }
-
+/* End CSS Footer */
 
 /* Responsive */
 @media screen and (min-width: 1100px)
