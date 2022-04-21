@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var n=0;
+        var max=0;
+        var number=0;
+        var min=0;
+        var number2=0;
+        document.write("Danh sách tuổi được nhập là:" +"<br>");
+        document.write("<br>");
+        do
+        {
+            n=parseInt(prompt("Bạn muốn mảng dài bao nhiêu phần tử ? Giới hạn cho phép là 69",69))
+        } while (n<=0 || n>69);
+        console.log(typeof n);
+        console.log(n);
+        let arr = new Array(n);
+        
+        // arr[0]= "Hảo";
+        // arr[1]="Hán";
+        // arr[2]="Chua cay"
+        for (var i=0;i<n;i++)
+        {
+            var string = parseInt(prompt("Mời bạn nhập tuổi của người thứ  " +(i+1) ) );
+            arr[i]=string;
+            document.write("Tuổi của người thứ " +(i+1)+" là: " + arr[i]+ "<br>");
+        }
+        min=arr[0];
+        number2=1;
+        for (var i=0;i<n;i++)
+        {
+            
+            if (arr[i] > max)
+            {
+                max = arr[i];
+                number=i+1;
+            }
+            
+            if (arr[i] < min)
+            {
+                min = arr[i];
+                number2=i+1;
+            }
+        }
+        document.write("<br>");
+        document.write("Tuổi lớn nhất trong danh sách là: " + max +"<br>");
+        document.write("Đây là tuổi của người thứ "+number+" trong danh sách." + "<br>");
+        document.write("<br>");
+        document.write("Tuổi nhỏ nhất trong danh sách là: " + min +"<br>");
+        document.write("Đây là tuổi của người thứ "+number2+" trong danh sách." + "<br>");
+    </script>
+</body>
+</html>
