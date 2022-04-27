@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lê Thanh Tùng Batch 171</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo-01.png" alt="logo" id="logo">
+                </a>
+                
+            </div>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1
+                                <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                  <li><a href="#">Page 1-1</a></li>
+                                  <li><a href="#">Page 1-2</a></li>
+                                  <li><a href="#">Page 1-3</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Page 2</a></li>
+                            <li><a href="#">Page 3</a></li>
+                        </ul>
+                        <form class="navbar-form navbar-left" action="/action_page.php">
+                            <div class="input-group">
+                              <input type="text" class="form-control" placeholder="Search">
+                              <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit">
+                                  <i class="glyphicon glyphicon-search"></i>
+                                </button>
+                              </div>
+                            </div>
+                        </form>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href=""><span class="glyphicon glyphicon-shopping-cart" onclick="loadDoc()"></span> <b id="cart">0</b></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                        </ul>
+                        
+                    </div>
+            </div>
+    </nav>
+
+     <!-- Begin Slider -->
+     <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+  
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="images/1.jpg" alt="Autumn" />
+            <div class="carousel-caption">
+              <h3>The School</h3>
+              <p>Our School in the autumn</p>
+            </div>
+          </div>
+  
+          <div class="item">
+            <img src="images/2.jpg" alt="Spring" />
+            <div class="carousel-caption">
+              <h3>The School In Spring</h3>
+              <p>Our school in the spring</p>
+            </div>
+          </div>
+  
+          <div class="item">
+            <img src="images/3.jpg" alt="Summer" />
+            <div class="carousel-caption">
+              <h3>Season summer</h3>
+              <p>In the summer...</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="images/4.jpg" alt="Winter" />
+            <div class="carousel-caption">
+              <h3>Winter</h3>
+              <p>And the Winter</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!-- End Slider -->
+      <!-- Modal -->
+      <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+      
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title text-center text-danger">LOG IN/REGISTER TO OUR SYSTEM</h4>
+            </div>
+            <div class="modal-body">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#login">Log in</a></li>
+                    <li><a data-toggle="tab" href="#register">Register</a></li>
+                  </ul>
+
+                  <div class="tab-content">
+                    <div id="login" class="tab-pane fade in active">
+                        <form action="#">
+                            <div class="form-group">
+                              <label for="email">Email address:</label>
+                              <input type="text" class="form-control" id="email-login">
+                            </div>
+                            <div id="error-email">
+                                <p class="text-danger">User Name have at lest 6 character !!</p>
+                            </div>
+                            <div class="form-group">
+                              <label for="pwd">Password:</label>
+                              <input type="password" class="form-control" id="pwd-login">
+                            </div>
+                            <div id="error-pwd">
+                                <p class="text-danger">Password need at least 10 character</p>
+                            </div>
+                            <div class="checkbox">
+                              <label><input type="checkbox"> Remember me</label>
+                            </div>
+                            <button type="submit" class="btn btn-default btn-success" id="btn-login">Log in</button>
+                          </form>
+                    </div>
+                    <div id="register" class="tab-pane fade">
+                        <form action="#">
+                            <div class="form-group">
+                              <label for="email">Email address:</label>
+                              <input type="text" class="form-control" id="email-register">
+                            </div>
+                            <div id="error-email-register">
+                                <p class="text-danger">User Name have at lest 6 character !!</p>
+                            </div>
+                            <div class="form-group">
+                              <label for="pwd">Password:</label>
+                              <input type="password" class="form-control" id="pwd-register">
+                            </div>
+                            <div id="error-pwd-register">
+                                <p class="text-danger">Password have at lest 10 character !!</p>
+                            </div>
+                            <div class="form-group">
+                                <label for="pwd">Retype Password:</label>
+                                <input type="password" class="form-control" id="repwd-register">
+                            </div>
+                            <div id="error-repassword-register">
+                                <p class="text-danger">RePassWord need the same value of Password !!</p>
+                            </div>
+                            <div class="checkbox">
+                              <label><input type="checkbox"> Remember me</label>
+                            </div>
+                            <button type="submit" class="btn btn-default btn-info" id="btn-register">Register</button>
+                          </form>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Modal -->
+    <div class="container-fluid" id="products">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-lg-3">
+                <div class="thumbnail text-center">
+                    <img src="images/lychee_300x300.jpg" alt="products">
+                    <h3 class="text-primary">Lychee</h3>
+                    <p class="text-danger">15$</p>
+                    <button class="btn btn-success btn-add-cart" id="button1">Add to Cart</button>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-lg-3">
+                <div class="thumbnail text-center">
+                    <img src="images/lentils_300x300.jpg" alt="products">
+                    <h3 class="text-primary">Lentils</h3>
+                    <p class="text-danger">15$</p>
+                    <button class="btn btn-success btn-add-cart" id="button2">Add to Cart</button>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-lg-3">
+                <div class="thumbnail text-center">
+                    <img src="images/malabarspinach_300x300.jpg" alt="products">
+                    <h3 class="text-primary">Malabar spinach</h3>
+                    <p class="text-danger">15$</p>
+                    <button class="btn btn-success btn-add-cart" id="button3">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-lg-3">
+                <div class="thumbnail text-center">
+                    <img src="images/mango_300x300.jpg" alt="products">
+                    <h3 class="text-primary">Mango</h3>
+                    <p class="text-danger">15$</p>
+                    <button class="btn btn-success btn-add-cart" id="button4">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <script>
+        var count = 0;
+        var btn1 = document.getElementById("button1").onclick = function() {countcart()};
+        var btn2 = document.getElementById("button2").onclick = function() {countcart()};
+        var btn3 = document.getElementById("button3").onclick = function() {countcart()};
+        var btn4 = document.getElementById("button4").onclick = function() {countcart()};
+        // var btn = document.getElementsByClassName("add-to-cart");
+        // var add = document.getElementById(btn);
+        function countcart() {
+            count+=1;
+            console.log(count);
+            document.getElementById("cart").innerHTML = count;
+        }
+        console.log(count);
+        var check1 = document.getElementById("btn-login").onclick = function(){checklogin()}
+        function checklogin() {
+            var name = document.getElementById("email-login").value;
+            var password = document.getElementById("pwd-login").value;
+            if (name.length<6)
+            {
+                document.getElementById("error-email").style.display="block";
+            }
+            else if (password.length<10)
+            {
+                document.getElementById("error-pwd").style.display="block";
+            }
+            else 
+            {
+                alert('Login Successfully!!');
+                document.getElementById("email-login").value="";
+                document.getElementById("pwd-login").value="";
+                document.getElementById("error-email").style.display="none";
+                document.getElementById("error-pwd").style.display="none";
+
+            }
+        }
+
+
+        var check2 = document.getElementById("btn-register").onclick = function(){checkregister()}
+        function checkregister() {
+            var name2 = document.getElementById("email-register").value;
+            var password2 = document.getElementById("pwd-register").value;
+            var rePassword2 = document.getElementById("repwd-register").value;
+            if (name2.length<6)
+            {
+                document.getElementById("error-email-register").style.display="block";
+            }
+            else if (password2.length<10)
+            {
+                document.getElementById("error-pwd-register").style.display="block";
+            }
+            else if (rePassword2!=password2)
+            {
+                document.getElementById("error-repassword-register").style.display="block";
+            }
+            else
+            {
+                alert('Register Successfully')
+                document.getElementById("email-register").value="";
+                document.getElementById("pwd-register").value="";
+                document.getElementById("repwd-register").value="";
+                document.getElementById("error-email-register").style.display="none";
+                document.getElementById("error-pwd-register").style.display="none";
+                document.getElementById("error-repassword-register").style.display="none";
+            }
+        }
+        
+
+    </script>
+</body>
+</html>

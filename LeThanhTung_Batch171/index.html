@@ -58,7 +58,7 @@
         <div class="container wid80">
           <h1 class="font-upper-now" id="title-special">SPECIAL COFFEE BEANS</h1>
           <h4 id="text-special" class="font-san">Lorem ipsum dolor sit amet consectetur adipisicing elit. </h4>
-          <button class="btn font-san" id="btn-readmore">Read More</button>
+          <button class="btn font-san" data-toggle="modal" data-target="#myModal" id="btn-readmore">Read More</button>
         </div>
       
       </div>
@@ -73,27 +73,27 @@
       </div>
       <!-- End Welcome -->
 
-      <!-- Begin Application -->
-      <div class="container-fluid application" id="about-us">
+      <!-- Begin About-us -->
+      <div class="container-fluid about-us" id="about-us">
         <div class="container wid80 font-san">
-          <div class="col-md-6 col-lg-6 font-white application-left">
+          <div class="col-md-6 col-lg-6 font-white about-us-left">
             <h3>Application</h3>
             <h3>USE OUR APPLICATION.</h3>
             <div class="hr1">
               &nbsp;
             </div>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga quibusdam inventore aliquam, tempora deserunt cum explicabo voluptatum illum rem harum culpa ut reprehenderit cumque corporis alias veniam? Nesciunt, voluptate vitae.</p>
-            <button class="btn btn-application">Read More</button>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minin veniam, quis nostrud exercitation ullamco loboris nisi ut aliquip ex ae commodo consequat. Duis auite irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <button class="btn btn-about-us"data-toggle="modal" data-target="#myModal">Read More</button>
           </div>
-          <div class="col-md-6 col-lg-6 pd0 application-right">
+          <div class="col-md-6 col-lg-6 pd0 about-us-right">
             <img src="images/product1.jpg" alt="">
             <div class="container icon text-center">
-            <i class="glyphicon glyphicon-play-circle application-icon"></i>
+            <i class="glyphicon glyphicon-play-circle about-us-icon"></i>
             </div>
           </div>
         </div>
       </div>
-      <!-- End Application -->
+      <!-- End About-us -->
 
       <!-- Begin Why Choose us -->
       <div class="container-fluid choose-us font-libertad">
@@ -161,7 +161,7 @@
           </div>
         </div>
         <div class="text-center font-san">
-          <button class="btn btn-gallery">READ MORE</button>
+          <button class="btn btn-gallery" data-toggle="modal" data-target="#myModal">READ MORE</button>
         </div>
       </div>
       <!-- End Gallery -->
@@ -180,7 +180,7 @@
               <h3 class="blog-title font-white">Cafe shop</h3>
               <h4 class="blog-title-by">by ABC/10.1.2018</h4>
               <p class="font-white">Lorem ipsum dolor sit amet consectetur adipiscing elit. Aenean feugiat dictum lacus, ut hendrerit mi pulvinar vel. Fusce id nibh at eleifend tristiqu...</p>
-              <button class="btn-blog">Read More <span><ion-icon name="arrow-forward-outline" class="ion-icon"></ion-icon></span></button>
+              <button class="btn-blog" data-toggle="modal" data-target="#myModal">Read More <span><ion-icon name="arrow-forward-outline" class="ion-icon"></ion-icon></span></button>
             </div>
           </div>
 
@@ -192,7 +192,7 @@
               <h3 class="blog-title font-white">Cafe bar</h3>
               <h4 class="blog-title-by">by ABC/10.1.2018</h4>
               <p class="font-white">Lorem ipsum dolor sit amet consectetur adipiscing elit. Aenean feugiat dictum lacus, ut hendrerit mi pulvinar vel. Fusce id nibh at eleifend tristiqu...</p>
-              <button class="btn-blog">Read More <span><ion-icon name="arrow-forward-outline" class="ion-icon"></ion-icon></span></button>
+              <button class="btn-blog" data-toggle="modal" data-target="#myModal">Read More <span><ion-icon name="arrow-forward-outline" class="ion-icon"></ion-icon></span></button>
             </div>
           </div>
 
@@ -204,7 +204,7 @@
               <h3 class="blog-title font-white">Cafe library</h3>
               <h4 class="blog-title-by">by ABC/10.1.2018</h4>
               <p class="font-white">Lorem ipsum dolor sit amet consectetur adipiscing elit. Aenean feugiat dictum lacus, ut hendrerit mi pulvinar vel. Fusce id nibh at eleifend tristiqu...</p>
-              <button class="btn-blog">Read More <span><ion-icon name="arrow-forward-outline" class="ion-icon"></ion-icon></span></button>
+              <button class="btn-blog" data-toggle="modal" data-target="#myModal">Read More <span><ion-icon name="arrow-forward-outline" class="ion-icon"></ion-icon></span></button>
             </div>
           </div>
           
@@ -218,7 +218,7 @@
         <div class="container">
           <img src="images/blog-image.png" alt="">
           <h3 class="about-text">Lorem ipsum dlor sit amet consectetur adipiscing elit. Aenean feugiat dictum lacus, ut hendrerit mi pulvinar vel. Fusce id nibh at eleifend tristiqu...</h3>
-          <h3 id="signature">Alex Bean</h3>
+          <h3 id="signature">- Alex Bean -</h3>
         </div>
         
       </div>
@@ -227,7 +227,7 @@
       <!-- Begin Contact -->
       <div class="container-fluid contact" id="contact">
           <div class="container form">
-            <form action="">
+            <form action="#">
                 <div class="flex-spacebetween">
                   <div class="input-label">
                     <label for=""><ion-icon name="person-sharp"></ion-icon></label>
@@ -276,5 +276,25 @@
       </div>
       <!-- End Footer -->
 
+      <!--BEGIN MODAL -->
+      <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+      
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title font-alex">Wait a second...</h4>
+            </div>
+            <div class="modal-body text-center font-upper-now">
+              <p>This function is in the process of further development. Please Wait !!</p>
+              <img src="images/Happy_smiley_face.png" alt="">
+            </div>
+            
+          </div>
+      
+        </div>
+      </div>
+      <!--END MODAL -->
 </body>
 </html>
