@@ -50,6 +50,7 @@
                             </div>
                         </form>
                         <ul class="nav navbar-nav navbar-right">
+                            <li><a href=""><span class="glyphicon glyphicon-shopping-cart" onclick="loadDoc()"></span> <b id="cart">0</b></a></li>
                             <li><a href="Form-Register.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
                             <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                         </ul>
@@ -66,7 +67,7 @@
                     <img src="images/lychee_300x300.jpg" alt="products">
                     <h3 class="text-primary">Lychee</h3>
                     <p class="text-danger">15$</p>
-                    <button class="btn btn-success">Add to Cart</button>
+                    <button class="btn btn-success btn-add-cart" id="button1">Add to Cart</button>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 col-lg-3">
@@ -74,7 +75,7 @@
                     <img src="images/lentils_300x300.jpg" alt="products">
                     <h3 class="text-primary">Lentils</h3>
                     <p class="text-danger">15$</p>
-                    <button class="btn btn-success">Add to Cart</button>
+                    <button class="btn btn-success btn-add-cart" id="button2">Add to Cart</button>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 col-lg-3">
@@ -82,7 +83,7 @@
                     <img src="images/malabarspinach_300x300.jpg" alt="products">
                     <h3 class="text-primary">Malabar spinach</h3>
                     <p class="text-danger">15$</p>
-                    <button class="btn btn-success">Add to Cart</button>
+                    <button class="btn btn-success btn-add-cart" id="button3">Add to Cart</button>
                 </div>
             </div>
 
@@ -91,12 +92,27 @@
                     <img src="images/mango_300x300.jpg" alt="products">
                     <h3 class="text-primary">Mango</h3>
                     <p class="text-danger">15$</p>
-                    <button class="btn btn-success">Add to Cart</button>
+                    <button class="btn btn-success btn-add-cart" id="button4">Add to Cart</button>
                 </div>
             </div>
         </div>
 
     </div>
     
+    <script>
+        var count = 0;
+        var btn1 = document.getElementById("button1").onclick = function() {countcart()};
+        var btn2 = document.getElementById("button2").onclick = function() {countcart()};
+        var btn3 = document.getElementById("button3").onclick = function() {countcart()};
+        var btn4 = document.getElementById("button4").onclick = function() {countcart()};
+        // var btn = document.getElementsByClassName("add-to-cart");
+        // var add = document.getElementById(btn);
+        function countcart() {
+            count+=1;
+            console.log(count);
+            document.getElementById("cart").innerHTML = count;
+        }
+        console.log(count);
+    </script>
 </body>
 </html>

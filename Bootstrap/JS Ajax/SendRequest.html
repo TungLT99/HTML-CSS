@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>TÈN TÉN TEN</h1>
+    <br>
+    <div id="demo">
+        <h1>Let Ajax change text</h1>
+        <button onclick="loadDoc()">See More</button>
+    </div>
+    <script>
+        function loadDoc() {
+            const xhttp = new XMLHttpRequest();
+            xhttp.onload = function() {
+                document.getElementById("demo").innerHTML = this.responseText;
+            }
+            xhttp.open("GET", "document/info.txt");
+            xhttp.send();
+        }
+    </script>
+    
+</body>
+</html>

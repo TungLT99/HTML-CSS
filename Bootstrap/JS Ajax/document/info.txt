@@ -1,0 +1,4 @@
+<h1>Ajax is a language</h1>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla libero, quo iste recusandae, ex commodi sed repellendus ipsum harum excepturi nesciunt necessitatibus repudiandae. Assumenda deleniti beatae sint maxime dolorem ex.</p>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla libero, quo iste recusandae, ex commodi sed repellendus ipsum harum excepturi nesciunt necessitatibus repudiandae. Assumenda deleniti beatae sint maxime dolorem ex.</p>
+<p>This is the end</p>
