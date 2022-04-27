@@ -40,6 +40,10 @@ html
     font-family: OpenSans;
 }
 @font-face{
+    src:url(../font/OpenSans-CondBold.ttf);
+    font-family: OpenSansBold;
+}
+@font-face{
     src:url(../font/Libertad-Regular.otf);
     font-family: Libertad;
 }
@@ -47,6 +51,7 @@ html
     src:url(../font/AlexBrush-Regular.ttf);
     font-family: AlexBrush;
 }
+
 .font1
 {
     font-family:'UpperNow';
@@ -65,6 +70,10 @@ html
 .font-san
 {
     font-family: 'OpenSans';
+}
+.font-san-bold
+{
+    font-family: 'OpenSansBold';
 }
 .font-libertad
 {
@@ -339,6 +348,10 @@ html
     margin-top: 4%;
     width: 70%;
 }
+.gallery .thumbnail
+{
+    /* min-height: 430px; */
+}
 .thumbnail
 {
     padding: 0;
@@ -367,21 +380,22 @@ html
 .thumbnail-text
 {
     background-color: white;
-    width: 80%;
+    width: 70%;
     margin: auto;
+    font-weight: bold;
 }
 .thumbnail .gallery-title
 {
     color: black;
     font-size: 200%;
-    font-weight: bold;
+    font-weight: bolder;
     margin-top: 12%;
     margin-bottom: 10%;
 }
 .thumbnail .gallery-price
 {
     color: #C6A177;
-    font-size: 160%;
+    font-size: 200%;
     margin-bottom: 10%;
 }
 .gallery .btn-gallery
@@ -418,6 +432,7 @@ html
     background-color: #151412;
     padding: 0;
     border-color: #151412;
+    padding-bottom: 1%;
 }
 .blog .thumbnail img
 {
@@ -466,6 +481,7 @@ html
     background-image: url(..//images/banner4.jpg);
     background-size: cover;
     padding: 4% 0;
+    min-height: 540px;
 
 }
 .about >.container
@@ -480,6 +496,8 @@ html
 {
     font-size: 360%;
     word-wrap: break-word;
+    max-width: 1100px;
+    margin: auto;
 }
 #signature
 {
@@ -532,29 +550,29 @@ html
     text-indent:10%;
     width: 100%;
 }
-#subject
+#subject-row
 {
     margin-top: 4%;
     margin-bottom: 4%;
 }
-#subject label
+#subject-row label
 {
     position: absolute;
     font-size: 110%;
     margin: 1% 0 0;
 }
-#subject input
+#subject-row input
 {
     text-indent: 4%;
 }
-#messenger label
+#messenger-row label
 {
     margin-bottom: 5%;
     width: 100%;
     font-weight: 500;
     font-size: 125%;
 }
-#messenger input
+#messenger-row input
 {
     width: 100%;
     padding-top: 15%;
@@ -653,9 +671,28 @@ html
 }
 
 /* Responsive */
+
+    
+
 /* PC */
 @media (min-width: 1024px) and (max-width:1400px)
 {
+    .choose-us .container
+    {
+        width: 80%;
+    }
+    #gallery .thumbnail
+    {
+        min-height: 317px;
+    }
+    #gallery .gallery-title
+    {
+        font-size: 150%;
+    }
+    #gallery .gallery-price
+    {
+        font-size: 130%;
+    }
     .form
     {
         width: 50%;
@@ -854,7 +891,13 @@ html
     }
     .about img
     {
-        width: 15%;
+        width: 20%;
+        margin-bottom: 15%;
+    }
+    .about-text
+    {
+        margin-top: 15%;
+        margin-bottom: 15%;
     }
     #signature
     {
@@ -881,5 +924,9 @@ html
         text-align: center;
         margin-top: 5%;
     }
-    
+    /* Modal */
+    #myModal
+    {
+        margin-top: 25%;
+    }
 }

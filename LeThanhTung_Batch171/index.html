@@ -135,8 +135,8 @@
             <img src="images/1.png" alt="Coffee Maker">
             </div>
             <div class="thumbnail-text">
-              <h4 class="font-san text-center gallery-title">SUPER ENAMEL COFFEE MAKER</h4>
-              <p class="font-san text-center gallery-price">20.83$</p>
+              <h4 class="font-san-bold text-center gallery-title">SUPER ENAMEL COFFEE MAKER</h4>
+              <p class="font-san text-center gallery-price">$20.83</p>
             </div>
           </div>
 
@@ -145,8 +145,8 @@
             <img src="images/2.png" alt="Coffee Maker" id="cream-gold">
             </div>
             <div class="thumbnail-text">
-              <h4 class="font-san text-center gallery-title">SUPER ENAMEL COFFEE MAKER</h4>
-              <p class="font-san text-center gallery-price">20.83$</p>
+              <h4 class="font-san-bold text-center gallery-title">COFFEE WITH CREAM GOLD COLLECTION</h4>
+              <p class="font-san text-center gallery-price">$20.805</p>
             </div>
           </div>
 
@@ -155,12 +155,12 @@
             <img src="images/3.png" alt="Coffee Maker" id="glass-coffee">
             </div>
             <div class="thumbnail-text">
-              <h4 class="font-san text-center gallery-title">SUPER ENAMEL COFFEE MAKER</h4>
-              <p class="font-san text-center gallery-price">20.83$</p>
+              <h4 class="font-san-bold text-center gallery-title">GLASS COFFEE JAR WITH WOOD COLLAR</h4>
+              <p class="font-san text-center gallery-price">$20.805</p>
             </div>
           </div>
         </div>
-        <div class="text-center font-san">
+        <div class="text-center font-san-bold">
           <button class="btn btn-gallery" data-toggle="modal" data-target="#myModal">READ MORE</button>
         </div>
       </div>
@@ -227,7 +227,7 @@
       <!-- Begin Contact -->
       <div class="container-fluid contact" id="contact">
           <div class="container form">
-            <form action="#">
+            <form action="#contact">
                 <div class="flex-spacebetween">
                   <div class="input-label">
                     <label for=""><ion-icon name="person-sharp"></ion-icon></label>
@@ -238,13 +238,13 @@
                     <input type="Email" placeholder="Email" id="email">
                   </div>
                 </div>
-                <div class="input-label container-fluid" id="subject">
+                <div class="input-label container-fluid" id="subject-row">
                   <label for=""><ion-icon name="person-sharp"></ion-icon></label>
-                  <input type="text" placeholder="Subject">
+                  <input type="text" placeholder="Subject" id="subject">
                 </div>
-                <div class="input-label container-fluid" id="messenger">
+                <div class="input-label container-fluid" id="messenger-row">
                   <label for="">Messenger
-                  <input type="text">
+                  <input type="text" id="messenger">
                 </div>
                 <div class="container-fluid">
                   <input type="submit" value="SUBMIT" class="btn text-center font-white" id="submit-btn">
@@ -296,5 +296,45 @@
         </div>
       </div>
       <!--END MODAL -->
+
+
+
+      <!-- JavaScript -->
+      <script>
+        document.getElementById("submit-btn").onclick=function(){check()};
+        function check()
+        {
+          var name = document.getElementById("name").value;
+          var email = document.getElementById("email").value;
+          var subject = document.getElementById("subject").value;
+          var messenger = document.getElementById("messenger").value;
+          if (name=="")
+          {
+            alert("Give us your name !");
+          }
+          else if (email=="")
+          {
+            alert("Please fill email !!")
+          }
+          else if (subject=="")
+          {
+            alert("Please fill subject !!")
+          }
+          else if (messenger=="")
+          {
+            alert("Please give your messenger !!")
+          }
+          else
+          {
+            alert("Your messenger has been sent ! Thank you <3");
+            document.getElementById("name").value="";
+            document.getElementById("email").value="";
+            document.getElementById("subject").value="";
+            document.getElementById("messenger").value="";
+            document.getElementById("name").focus="";
+          }
+
+        }
+      </script>
 </body>
 </html>
